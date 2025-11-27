@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  background-color: #121212;
+  color: #E0E0E0;
+}
+
+.accent-text {
+  color: #34D399;
+}
+
+a.active hr{
+    display: block;
+}
+
+*{
+    font-family: "Outfit"
+}
+.prata-regular {
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .input-style {
+    @apply border border-gray-700 rounded py-1.5 px-3.5 w-full bg-gray-900 text-gray-200 placeholder-gray-500 transition-colors focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400 outline-none;
+}
+  
+  @media (max-width: 640px){
+    a.active{
+        background-color: #34D399; 
+        color: black;
+    }
+  }
+
+  ::-webkit-scrollbar{
+    display: none;
+  }
+
+  .hide-number-input-spinners {
+  -moz-appearance: textfield; 
+}
+  .hide-number-input-spinners::-webkit-outer-spin-button,
+  .hide-number-input-spinners::-webkit-inner-spin-button {
+    -webkit-appearance: none; 
+    margin: 0;
+  }
