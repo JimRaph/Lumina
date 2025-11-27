@@ -28,26 +28,26 @@ The project is divided into three top-level directories, representing a classic 
 Both client applications are built on a highly modern, component-based, and performant stack:
 
 
-- | **Framework** | **React** | Component-based UI development. |
-- | **Build Tool** | **Vite** | Fast development, hot module replacement, and optimized bundling. |
-| **Styling** | **Tailwind CSS** | Utility-First CSS framework for responsive and themed design. |
-| **Routing** | **React Router DOM** | Declarative navigation between pages. |
-| **State** | **React Hooks** | Local state management (`useState`, `useEffect`). |
-| **API Client** | **Axios** | Handling HTTP requests to the backend API. |
-| **Feedback** | **React Toastify** | User notification system (alerts, success messages). |
+- | **Framework** | *React* | Component-based UI development. |
+- | **Build Tool** | *Vite* | Fast development, hot module replacement, and optimized bundling. |
+- | **Styling** | *Tailwind CSS* | Utility-First CSS framework for responsive and themed design. |
+- | **Routing** | *React Router DOM* | Declarative navigation between pages. |
+- | **State** | *React Hooks* | Local state management (`useState`, `useEffect`). |
+- | **API Client** | *Axios* | Handling HTTP requests to the backend API. |
+- | **Feedback** | *React Toastify* | User notification system (alerts, success messages). |
 
 ### Backend API (`backend/`)
 
 The core logic and data security are handled by a robust, scalable Node.js server:
 
 
-| **Runtime** | **Node.js** | Server-side environment for executing JavaScript. |
-| **Framework** | **Express** | Minimalist web application framework for building APIs. |
-| **Payments** | **Stripe** | Secure integration for handling all e-commerce transactions. |
-| **Authentication** | **jsonwebtoken** | Creating and verifying JWT tokens for secured routes. |
-| **Security** | **bcrypt** | Hashing passwords for secure storage in the database. |
-| **Media** | **Cloudinary** & **Multer** | **Multer** handles file uploads locally; **Cloudinary** provides remote, scalable media storage. |
-| **Dev Tool** | **Nodemon** | Automatically restarts the Node application when file changes are detected. |
+- | **Runtime** | *Node.js* | Server-side environment for executing JavaScript. |
+- | **Framework** | *Express* | Minimalist web application framework for building APIs. |
+- | **Payments** | *Stripe* | Secure integration for handling all e-commerce transactions. |
+- | **Authentication** | *jsonwebtoken* | Creating and verifying JWT tokens for secured routes. |
+- | **Security** | *bcrypt* | Hashing passwords for secure storage in the database. |
+- | **Media** | *Cloudinary* & *Multer* | **Multer** handles file uploads locally; **Cloudinary** provides remote, scalable media storage. |
+- | **Dev Tool** | *Nodemon* | Automatically restarts the Node application when file changes are detected. |
 
 ---
 
@@ -69,18 +69,18 @@ The project requires the following environment variables to be set up:
 
 ### Backend (`backend/.env` file)
 
- `MONGO_URI` 
- `CLOUDINARY_NAME` 
- `CLOUDINARY_API_KEY` 
- `CLOUDINARY_API_SECRET`
- `JWT_SECRET_KEY` 
- `ADMIN_PASSWORD` - Default password (Development)`QWERTYQWERTY`
- `ADMIN_EMAIL` - Default email (Development) - `admin@info.com` 
- `STRIPE_SECRET_KEY` 
- `STRIPE_WEBHOOK_SECRET` 
- `PORT` - default - 4000
- `FRONTEND_URL` - default - 5173
- `ADMIN_URL` - default - 5174
+- `MONGO_URI` 
+- `CLOUDINARY_NAME` 
+- `CLOUDINARY_API_KEY` 
+- `CLOUDINARY_API_SECRET`
+- `JWT_SECRET_KEY` 
+- `ADMIN_PASSWORD` - Default password (Development)`QWERTYQWERTY`
+- `ADMIN_EMAIL` - Default email (Development) - `admin@info.com` 
+- `STRIPE_SECRET_KEY` 
+- `STRIPE_WEBHOOK_SECRET` 
+- `PORT` - default - 4000
+- `FRONTEND_URL` - default - 5173
+- `ADMIN_URL` - default - 5174
 
 ### Frontend and Admin (`frontend/.env` and `admin/.env` files)
 
