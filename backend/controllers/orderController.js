@@ -1,4 +1,3 @@
-// import { currency } from "../../admin/src/App.jsx";
 import orderModel from "../models/orderModel.js";
 import userModel from "../models/userModel.js";
 import Stripe from 'stripe'
@@ -180,9 +179,6 @@ const verifyStripe = async(req, res) => {
     }
 }
 
-const placeOrderRazorpay = async(req, res) =>{
-
-}
 
 //For admin page
 const allOrders = async(req, res) =>{
@@ -240,4 +236,4 @@ const updateStatus = async(req, res) =>{
     }
 }
 
-export {placeOrder, updateStatus, userOrders, placeOrderRazorpay, placeOrderStripe, allOrders, idOrder, stripeWebhook, verifyStripe}
+export {placeOrder, updateStatus, userOrders, placeOrderStripe, allOrders, idOrder, stripeWebhook, verifyStripe}

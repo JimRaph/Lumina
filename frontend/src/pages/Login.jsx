@@ -64,8 +64,9 @@ const Login = () => {
   return (
     <form
       onSubmit={submitHandler}
-      className="flex flex-col w-[90%] sm:max-w-[550px] m-auto mt-14 mb-20 p-8 sm:p-12 gap-5 
-                 bg-[#1a1a1a] rounded-xl shadow-2xl shadow-gray-900 text-gray-200"
+      className="flex flex-col w-[90%] sm:max-w-[550px] m-auto mb-20 p-8 sm:p-12 gap-5 
+                 bg-[#1a1a1a] rounded-xl shadow-2xl shadow-gray-900 text-gray-200
+                 relative translate-y-1/2 "
     >
       
       <div className="inline-flex items-center gap-3 mb-4">

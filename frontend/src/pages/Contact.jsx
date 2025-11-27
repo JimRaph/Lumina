@@ -1,6 +1,7 @@
 import Title from '../components/Title'
 import { assets } from '../assets/assets'
 import Newsletter from '../components/Newsletter'
+import { toast } from 'react-toastify'
 
 const Content = () => {
 
@@ -28,7 +29,7 @@ const Content = () => {
           <div className='text-gray-400'>
             <p className='font-semibold text-lg text-gray-200 mb-1'>Our Store Location</p>
             <p className='text-gray-500'>
-              Address: <br /><span className='text-gray-400'>123 Main Street, City, State, Zip Code</span>
+              Address: <br /><span className='text-gray-400'>26 Konaha Village</span>
             </p>
           </div>
 
@@ -36,20 +37,22 @@ const Content = () => {
             <p className='font-semibold text-lg text-gray-200 mb-1'>Reach Out</p>
             <p className='text-gray-500'>
               Tel: <span className='text-gray-400'>+234 813 765 1234</span><br />
-              Email: <span className='text-gray-400 hover:text-emerald-400 cursor-pointer'>info@example.com</span>
+              Email: <span className='text-gray-400 hover:text-emerald-400 cursor-pointer'>naruto@gmail.com</span>
             </p>
           </div>
           
           <hr className='w-2/4 border-gray-800'/>
 
           <p className='text-gray-200 font-bold text-xl mt-2'>
-            Careers at <span className='accent-text'>FOREVER</span>
+            Careers at <span className='accent-text'>LUMINA</span>
           </p>
           <p className='text-gray-500'>
             Learn more about our teams and job openings.
           </p>
           
-          <button 
+          <button onClick={() => {
+            toast.info('Check back later')
+          }}
           className='bg-emerald-500 text-gray-900 px-10 py-3 text-sm font-bold rounded-full 
                      hover:bg-emerald-400 shadow-lg shadow-emerald-700/50 transition-all duration-300'>
             EXPLORE CAREERS

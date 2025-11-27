@@ -19,7 +19,7 @@ const About = () => {
         <div className='flex flex-col justify-center gap-6 md:w-2/4 text-gray-400'>
           
           <p className='text-lg'>
-            To create an unrivaled fashion experience that offers **comfort**, **style**, and **convenience** to every customer, while ensuring that the cost is just right for everyone. We strive to create a platform that offers the best in comfort, style, and convenience, while ensuring that the cost is just right for everyone.
+            To create an unrivaled fashion experience that offers <span className='font-bold text-gray-300'>comfort</span>, <span className='font-bold text-gray-200'>style</span>, and <span className='font-bold text-gray-200'>convenience</span> to every customer, while ensuring that the cost is just right for everyone. We strive to create a platform that offers the best in comfort, style, and convenience, while ensuring that the cost is just right for everyone.
           </p>
           
           <p>

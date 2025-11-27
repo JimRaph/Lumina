@@ -1,5 +1,5 @@
 import express from 'express';
-import { placeOrder, placeOrderRazorpay, placeOrderStripe,
+import { placeOrder, placeOrderStripe,
     allOrders, userOrders, updateStatus,
      stripeWebhook, idOrder, verifyStripe
  } from '../controllers/orderController.js';
@@ -18,7 +18,6 @@ orderRouter.post('/status',express.json(), adminAuth, updateStatus)
 //payment 
 orderRouter.post('/placeorder',express.json(),cartAuth, placeOrder)
 orderRouter.post('/stripe',express.json(), cartAuth, placeOrderStripe)
-orderRouter.post('/razorpay',express.json(), cartAuth, placeOrderRazorpay)
 
 //frontend user
 orderRouter.post('/userorders', express.json(), cartAuth, userOrders)

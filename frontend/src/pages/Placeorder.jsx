@@ -85,11 +85,6 @@ const Placeorder = () => {
           break;
         }
 
-        case "razorpay":
-          orderData.paymentMethod = "razorpay";
-          toast.info("Razorpay integration not complete. Using default.");
-          break;
-
         case "stripe": {
           if (!token) {
             console.log("Token not found for stripe placeorder");
@@ -259,27 +254,6 @@ const Placeorder = () => {
               />
             </div>
 
-            <div
-              onClick={() => setMethod("razorpay")}
-              className={`flex items-center gap-3 border p-2 px-3 cursor-pointer bg-gray-900 ${
-                method === "razorpay"
-                  ? "border-emerald-400"
-                  : "border-gray-700"
-              }`}
-            >
-              <p
-                className={`min-w-3.5 h-3.5 border rounded-full border-gray-400 transition-colors ${
-                  method === "razorpay"
-                    ? "bg-emerald-400 border-emerald-400"
-                    : "bg-transparent"
-                }`}
-              ></p>
-              <img
-                className="h-5 mx-4 filter invert"
-                src={assets.razorpay_logo}
-                alt="Razorpay Logo"
-              />
-            </div>
 
             <div
               onClick={() => setMethod("cod")}
