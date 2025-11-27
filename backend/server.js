@@ -17,7 +17,11 @@ const port = process.env.PORT || 4000
 connectDB()
 connectCD()
 
-app.use(cors())
+app.use(cors({
+    origin: [process.env.FRONTEND_URL, process.env.ADMIN_URL],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true
+}))
 
 app.post('/api/order/verifystripee', express.raw({ type: 'application/json' }));
 app.use('/api/order', orderRouter)
