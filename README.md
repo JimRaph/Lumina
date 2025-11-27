@@ -15,8 +15,8 @@ This project utilizes a **monorepo** structure, housing the public storefront, t
 The project is divided into three top-level directories, representing a classic three-tier architecture:
 
 
-| **`admin/`** | **Administration Dashboard** | Inventory management, product addition/editing, updating order/purchase states, and administrative content control. |
-| **`frontend/`** | **Public Storefront** | User authentication, product browsing, cart management, and checkout process (the actual e-commerce application). |
+-| **`admin/`** | **Administration Dashboard** | Inventory management, product addition/editing, updating order/purchase states, and administrative content control. 
+-| **`frontend/`** | **Public Storefront** | User authentication, product browsing, cart management, and checkout process (the actual e-commerce application). |
 | **`backend/`** | **API & Data Layer** | Handling core business logic, user/admin authentication, payment processing, and database interactions. |
 
 ---
