@@ -15,9 +15,9 @@ This project utilizes a **monorepo** structure, housing the public storefront, t
 The project is divided into three top-level directories, representing a classic three-tier architecture:
 
 
--| **`admin/`** | **Administration Dashboard** | Inventory management, product addition/editing, updating order/purchase states, and administrative content control. 
--| **`frontend/`** | **Public Storefront** | User authentication, product browsing, cart management, and checkout process (the actual e-commerce application). |
-| **`backend/`** | **API & Data Layer** | Handling core business logic, user/admin authentication, payment processing, and database interactions. |
+-  **`admin/`** | **Administration Dashboard** | Inventory management, product addition/editing, updating order/purchase states, and administrative content control. 
+-  **`frontend/`** | **Public Storefront** | User authentication, product browsing, cart management, and checkout process (the actual e-commerce application). 
+-  **`backend/`** | **API & Data Layer** | Handling core business logic, user/admin authentication, payment processing, and database interactions. 
 
 ---
 
@@ -28,26 +28,26 @@ The project is divided into three top-level directories, representing a classic 
 Both client applications are built on a highly modern, component-based, and performant stack:
 
 
-- | **Framework** | *React* | Component-based UI development. |
-- | **Build Tool** | *Vite* | Fast development, hot module replacement, and optimized bundling. |
-- | **Styling** | *Tailwind CSS* | Utility-First CSS framework for responsive and themed design. |
-- | **Routing** | *React Router DOM* | Declarative navigation between pages. |
-- | **State** | *React Hooks* | Local state management (`useState`, `useEffect`). |
-- | **API Client** | *Axios* | Handling HTTP requests to the backend API. |
-- | **Feedback** | *React Toastify* | User notification system (alerts, success messages). |
+- **Framework** | *React* | Component-based UI development. 
+- **Build Tool** | *Vite* | Fast development, hot module replacement, and optimized bundling. 
+- **Styling** | *Tailwind CSS* | Utility-First CSS framework for responsive and themed design. 
+- **Routing** | *React Router DOM* | Declarative navigation between pages. 
+- **State** | *React Hooks* | Local state management (`useState`, `useEffect`). 
+- **API Client** | *Axios* | Handling HTTP requests to the backend API. 
+- **Feedback** | *React Toastify* | User notification system (alerts, success messages). 
 
 ### Backend API (`backend/`)
 
 The core logic and data security are handled by a robust, scalable Node.js server:
 
 
-- | **Runtime** | *Node.js* | Server-side environment for executing JavaScript. 
-- | **Framework** | *Express* | Minimalist web application framework for building APIs. 
-- | **Payments** | *Stripe* | Secure integration for handling all e-commerce transactions. 
-- | **Authentication** | *jsonwebtoken* | Creating and verifying JWT tokens for secured routes. 
-- | **Security** | *bcrypt* | Hashing passwords for secure storage in the database. 
-- | **Media** | *Cloudinary* & *Multer* | Handles file upload 
-- | **Dev Tool** | *Nodemon* | Automatically restarts the Node application when file changes are detected. 
+-  **Runtime** | *Node.js* | Server-side environment for executing JavaScript. 
+-  **Framework** | *Express* | Minimalist web application framework for building APIs. 
+-  **Payments** | *Stripe* | Secure integration for handling all e-commerce transactions. 
+-  **Authentication** | *jsonwebtoken* | Creating and verifying JWT tokens for secured routes. 
+-  **Security** | *bcrypt* | Hashing passwords for secure storage in the database. 
+-  **Media** | *Cloudinary* & *Multer* | Handles file upload 
+-  **Dev Tool** | *Nodemon* | Automatically restarts the Node application when file changes are detected. 
 
 ---
 
