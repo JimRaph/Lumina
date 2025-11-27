@@ -28,8 +28,8 @@ The project is divided into three top-level directories, representing a classic 
 Both client applications are built on a highly modern, component-based, and performant stack:
 
 
-| **Framework** | **React** | Component-based UI development. |
-| **Build Tool** | **Vite** | Fast development, hot module replacement, and optimized bundling. |
+- | **Framework** | **React** | Component-based UI development. |
+- | **Build Tool** | **Vite** | Fast development, hot module replacement, and optimized bundling. |
 | **Styling** | **Tailwind CSS** | Utility-First CSS framework for responsive and themed design. |
 | **Routing** | **React Router DOM** | Declarative navigation between pages. |
 | **State** | **React Hooks** | Local state management (`useState`, `useEffect`). |
