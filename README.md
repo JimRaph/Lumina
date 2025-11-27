@@ -41,13 +41,13 @@ Both client applications are built on a highly modern, component-based, and perf
 The core logic and data security are handled by a robust, scalable Node.js server:
 
 
-- | **Runtime** | *Node.js* | Server-side environment for executing JavaScript. |
-- | **Framework** | *Express* | Minimalist web application framework for building APIs. |
-- | **Payments** | *Stripe* | Secure integration for handling all e-commerce transactions. |
-- | **Authentication** | *jsonwebtoken* | Creating and verifying JWT tokens for secured routes. |
-- | **Security** | *bcrypt* | Hashing passwords for secure storage in the database. |
-- | **Media** | *Cloudinary* & *Multer* | **Multer** handles file uploads locally; **Cloudinary** provides remote, scalable media storage. |
-- | **Dev Tool** | *Nodemon* | Automatically restarts the Node application when file changes are detected. |
+- | **Runtime** | *Node.js* | Server-side environment for executing JavaScript. 
+- | **Framework** | *Express* | Minimalist web application framework for building APIs. 
+- | **Payments** | *Stripe* | Secure integration for handling all e-commerce transactions. 
+- | **Authentication** | *jsonwebtoken* | Creating and verifying JWT tokens for secured routes. 
+- | **Security** | *bcrypt* | Hashing passwords for secure storage in the database. 
+- | **Media** | *Cloudinary* & *Multer* | Handles file upload 
+- | **Dev Tool** | *Nodemon* | Automatically restarts the Node application when file changes are detected. 
 
 ---
 
@@ -56,9 +56,9 @@ The core logic and data security are handled by a robust, scalable Node.js serve
 The `admin/` application is designed for maximum administrative efficiency and responsiveness:
 
 1.  **Full Inventory Control:** Features for adding, listing, and managing products with immediate visibility updates on the public storefront.
-2.  **Responsive UI:** The dashboard employs a **desktop-first** approach for complex tasks (forms, tables) but remains functional on mobile:
-    * **Collapsible Sidebar:** Navigation switches to a hidden **off-canvas drawer** on small screens.
-    * **Responsive Tables:** Detailed tables (`List.jsx`) transform into a scannable **Stacked Card View** on mobile devices.
+2.  **Responsive UI:** The dashboard employs a desktop-first approach for complex tasks (forms, tables) but remains functional on mobile:
+    * **Collapsible Sidebar:** Navigation switches to a hidden off-canvas drawer on small screens.
+    * **Responsive Tables:** Detailed tables (`List.jsx`) transform into a scannable Stacked Card View on mobile devices.
 3.  **Order State Management:** Allows administrators to track and update the state of purchases (e.g., pending, processing, delivered).
 
 ---
@@ -99,7 +99,7 @@ You must have **Node.js** (including npm or yarn) installed on your development 
 1.  **Clone the repository:**
     ```bash
     git clone https://github.com/JimRaph/Lumina.git
-    cd lumina-platform
+    cd lumina
     ```
 
 2.  **Install Backend Dependencies:**
