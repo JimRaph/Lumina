@@ -92,7 +92,7 @@ const Collection = () => {
 
  return (
   <div className="sm:px-[5vw] md:px-[7vw] lg:px-[9vw] py-10">
-    <div className="flex flex-col sm:flex-row gap-8 sm:gap-10 border-t border-gray-800 pt-10">
+    <div className="flex flex-col md:flex-row gap-8 sm:gap-10 border-t border-gray-800 pt-10">
 
 
     <div className="min-w-60">
@@ -167,7 +167,7 @@ const Collection = () => {
 
     <div className="flex-1">
 
-    <div className="flex justify-between items-center mb-6">
+    <div className="flex justify-between items-center mb-6 flex-col lg:flex-row">
     <Title text1={"ALL"} text2={"COLLECTIONS"} />
 
     <div className="relative z-20"> 
@@ -198,7 +198,7 @@ const Collection = () => {
     </div>
     </div>
 
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 gap-y-10">
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 gap-y-10">
     {sortedProducts.map((product) => (
       <ProductItem
       key={product._id}

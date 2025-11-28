@@ -23,15 +23,17 @@ const Navbar = () => {
     <div className='sticky top-0 z-50 flex items-center justify-between py-5 font-medium sm:px-[5vw] md:px-[7vw] lg:px-[9vw] bg-[#1a1a1a] shadow-xl w-full px-4'>      
 
         <div className='flex items-center gap-6 '>
-            <img onClick={()=>setVisible(true)} src={assets.menu_icon} className='w-5 cursor-pointer sm:hidden filter 
+            <img onClick={()=>setVisible(true)} src={assets.menu_icon} className='w-5 cursor-pointer md:hidden filter 
             invert sepia-0 saturate-100 brightness-100 transition-all duration-200' alt='' />
 
             <img onClick={()=>setShowSearch(true)} src={assets.search_icon} className='w-5 cursor-pointer filter
-            invert sepia-0 saturate-100 brightness-100 transition-all duration-200 hover:opacity-80' alt='' />
+            invert sepia-0 saturate-100 brightness-100 transition-all duration-200 hover:opacity-80 hidden md:block' alt='' />
 
-            <div className='group relative '>
-                <img onClick={() => token ? "" : navigate('/login')} src={assets.profile_icon} className='w-5 cursor-pointer filter 
-                invert sepia-0 saturate-100 brightness-100 transition-all duration-200 hover:opacity-80' alt='' />
+            <div className='group relative hidden md:block'>
+                <img onClick={() => token ? "" : navigate('/login')} 
+                src={assets.profile_icon} 
+                className='w-5 min-w-5 cursor-pointer filter invert sepia-0 saturate-100 brightness-100 
+                transition-all duration-200 hover:opacity-80' alt='' />
                 
                 {token ? 
                     <div className='group-hover:block hidden absolute dropdown-menu  pt-4'>
@@ -42,7 +44,7 @@ const Navbar = () => {
                     </div>
                 </div>
                     :
-                    <div className='group-hover:block hidden absolute dropdown-menu right-0 pt-4'>
+                    <div className='group-hover:block hidden absolute dropdown-menu pt-4'>
                     <div className='flex flex-col gap-2 w-36 py-3 px-5 bg-gray-800 text-gray-300 rounded shadow-2xl'>
                         <p onClick={() => navigate('/login')} className='cursor-pointer hover:text-emerald-400'>Log In</p>
                     </div>
@@ -50,8 +52,10 @@ const Navbar = () => {
                 }
             </div>
 
-            <Link to='/cart' className='relative'>
-                <img src={assets.cart_icon} className='w-5 min-w-5 filter invert sepia-0 saturate-100 brightness-100 transition-all duration-200' alt='' />
+            <Link to='/cart' className='relative hidden md:block'>
+                <img src={assets.cart_icon} 
+                className='w-5 min-w-5 filter invert sepia-0 saturate-100 brightness-100 transition-all 
+                duration-200 ' alt='' />
                 <p className='absolute right-[-5px] bottom-[-5px] w-4 text-center leading-4 bg-emerald-400
                  text-gray-900 font-bold aspect-square rounded-full text-[8px]'>
                 {getCartCount()}
@@ -60,7 +64,7 @@ const Navbar = () => {
         </div>
 
 
-        <ul className='hidden sm:flex gap-8 text-sm text-gray-300 uppercase tracking-widest'>
+        <ul className='hidden lg:flex gap-8 text-sm text-gray-300 uppercase tracking-widest'>
             <NavLink to='/' className='flex flex-col items-center gap-1 group hover:text-emerald-400 transition-colors'>
                 <p>HOME</p>
                 <hr className='w-full border-none h-[2px] bg-emerald-400 hidden group-hover:block' />
@@ -108,6 +112,11 @@ const Navbar = () => {
                     <NavLink onClick={()=>setVisible(false)}className='py-3 pl-6 border-b border-gray-800 hover:bg-gray-800 hover:text-emerald-400 transition-colors uppercase' to='/collection'>COLLECTION</NavLink>
                     <NavLink onClick={()=>setVisible(false)}className='py-3 pl-6 border-b border-gray-800 hover:bg-gray-800 hover:text-emerald-400 transition-colors uppercase' to='/about'>ABOUT</NavLink>
                     <NavLink onClick={()=>setVisible(false)}className='py-3 pl-6 border-b border-gray-800 hover:bg-gray-800 hover:text-emerald-400 transition-colors uppercase' to='/contact'>CONTACT</NavLink>
+                    <NavLink onClick={()=>setVisible(false)}className='py-3 pl-6 border-b border-gray-800 hover:bg-gray-800 hover:text-emerald-400 transition-colors uppercase' to='/orders'>ORDERS</NavLink>
+                    <NavLink onClick={()=>setVisible(false)}className='py-3 pl-6 border-b border-gray-800 hover:bg-gray-800 hover:text-emerald-400 transition-colors uppercase' to='/cart'>CART</NavLink>
+                    <NavLink onClick={()=>setVisible(false)}className='py-3 pl-6 border-t border-t-emerald-400 border-gray-800 hover:bg-emerald-600 transition-colors uppercase' to='/login'>
+                        {token ? 'Logout' : 'Login'}
+                    </NavLink>
                 </div>
             </div>
         </div>
