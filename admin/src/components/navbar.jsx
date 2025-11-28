@@ -23,8 +23,8 @@ const Navbar = ({ setToken }) => {
                     onClick={() => navigate('/list')}
                     className='text-2xl sm:text-3xl font-bold cursor-pointer tracking-wider'
                 >
-                    <span className="text-gray-900">LUM</span>
-                    <span className="text-emerald-500">INA</span>
+                    <span className="text-gray-900">SHOP</span>
+                    <span className="text-emerald-500">LUMINA</span>
                 </h1>
             </div>
 

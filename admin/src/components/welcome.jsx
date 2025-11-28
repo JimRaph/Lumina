@@ -23,7 +23,7 @@ const Welcome = () => {
                     Welcome, <span className="text-emerald-500">Admin</span>!
                 </h2>
                 <p className="text-lg text-gray-600 mb-6 text-center max-w-xl mx-auto">
-                    Your central hub for managing Lumina E-commerce.
+                    Your central hub for managing ShopLumina E-commerce.
                 </p>
                 
                 <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">

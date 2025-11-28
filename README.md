@@ -1,10 +1,10 @@
-## Lumina E-commerce Platform
+## ShopLumina E-commerce Platform
 
 ---
 
 ## Overview
 
-The **Lumina Platform** is a modern, full-stack e-commerce solution designed for seamless online shopping and efficient internal administration.
+The **ShopLumina Platform** is a modern, full-stack e-commerce solution designed for seamless online shopping and efficient internal administration.
 
 This project utilizes a **monorepo** structure, housing the public storefront, the dedicated administrative panel, and the central Node.js API. This architecture allows for unified development, state management, and clear separation of concerns between user-facing, management, and data layers.
 

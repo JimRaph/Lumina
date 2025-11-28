@@ -10,7 +10,7 @@ const Footer = () => {
             <div>
                 <Link to='/'> 
                     <p className="text-3xl font-extrabold text-white tracking-widest cursor-pointer">
-                        LUM<span className="accent-text">INA</span>
+                        SHOP<span className="accent-text">LUMINA</span>
                     </p>
                 </Link>
                 <p className='w-full md:w-2/3 text-gray-400'>

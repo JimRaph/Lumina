@@ -44,7 +44,7 @@ const Content = () => {
           <hr className='w-2/4 border-gray-800'/>
 
           <p className='text-gray-200 font-bold text-xl mt-2'>
-            Careers at <span className='accent-text'>LUMINA</span>
+            Careers at <span className='accent-text'>SHOPLUMINA</span>
           </p>
           <p className='text-gray-500'>
             Learn more about our teams and job openings.
